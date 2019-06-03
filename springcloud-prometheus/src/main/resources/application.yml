@@ -1,0 +1,24 @@
+server:
+    port: 8879
+
+management:
+    server:
+        port: 9999
+    metrics:
+        export:
+            prometheus:
+                enabled: true
+                step: 1m
+                descriptions: true
+    web:
+        server:
+            auto-time-requests: false
+    endpoints:
+        prometheus:
+            id: springmetrics
+        web:
+            base-path: /ops
+            path-mapping:
+                prometheus: monitor
+            exposure:
+                include: health,info,prometheus

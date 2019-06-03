@@ -16,12 +16,12 @@ public class SpringcloudFlowableApplication {
         SpringApplication.run(SpringcloudFlowableApplication.class, args);
     }
 
-/*    @Bean
+   @Bean
     public InitializingBean initializingBean(RepositoryService repositoryService) {
         return () -> {
             List<Deployment> list = repositoryService.createDeploymentQuery().list();
             System.err.println("Deployment size: " + list.size());// where '1' is expected
         };
-    }*/
+    }
 
 }

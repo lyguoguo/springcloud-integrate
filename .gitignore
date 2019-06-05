@@ -1,5 +1,7 @@
 HELP.md
+springcloud-integrate.iml
 /target/
+.idea/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###

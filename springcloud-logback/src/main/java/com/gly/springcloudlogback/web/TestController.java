@@ -1,8 +1,6 @@
 package com.gly.springcloudlogback.web;
 
-import com.alibaba.fastjson.JSON;
-import com.gly.springcloudlogback.config.LogJson;
-import com.gly.springcloudlogback.config.RequestConvert;
+import com.gly.springcloudlogback.handle.LogJson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author: create by ggaly
@@ -30,7 +30,12 @@ public class TestController {
     @PostMapping("/writeLog")
     public String writeLog(String requestParam, HttpServletRequest request){
         String responseMsg = "响应完成:"+requestParam;
-        logger.info(logJson.writeLog(request,"XXXX",responseMsg));
+        logger.info(logJson.writeLog(request));
+
+        Map<String,Object> message = new HashMap<>();
+        message.put("haha","hahah");
+        message.put("lala","lalal");
+        logger.info(logJson.writeLog(request,message,responseMsg));
         return responseMsg;
     }
 }

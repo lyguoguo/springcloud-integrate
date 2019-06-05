@@ -1,4 +1,4 @@
-package com.gly.springcloudlogback.config;
+package com.gly.springcloudlogback.convert;
 
 import ch.qos.logback.classic.pattern.CallerDataConverter;
 import ch.qos.logback.classic.spi.ILoggingEvent;
@@ -6,7 +6,7 @@ import ch.qos.logback.classic.spi.ILoggingEvent;
 /**
  * @author: create by ggaly
  * @version: v1.0
- * @description: com.gly.springcloudlogback.config
+ * @description: com.gly.springcloudlogback.convert
  * @date:2019/6/5
  **/
 public class FileAndLineCallerConverter extends CallerDataConverter {

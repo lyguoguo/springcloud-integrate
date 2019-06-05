@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * @author: create by ggaly
  * @version: v1.0
- * @description: com.gly.springcloudkafka.consumer.config
+ * @description: com.gly.springcloudkafka.consumer.convert
  * @date:2019/5/6
  **/
 @Configuration

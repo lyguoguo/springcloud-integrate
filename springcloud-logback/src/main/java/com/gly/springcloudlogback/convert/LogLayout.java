@@ -1,14 +1,10 @@
-package com.gly.springcloudlogback.config;
+package com.gly.springcloudlogback.convert;
 
 import ch.qos.logback.classic.pattern.ExtendedThrowableProxyConverter;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.CoreConstants;
 import ch.qos.logback.core.LayoutBase;
-import com.alibaba.fastjson.JSON;
-import org.slf4j.MDC;
-import org.springframework.util.StringUtils;
 
-import java.sql.Timestamp;
 import java.util.UUID;
 
 /**
@@ -17,12 +13,12 @@ import java.util.UUID;
  * @description: com.gly.springcloudlogback
  * @date:2019/6/5
  **/
-public class MyLogLayout extends LayoutBase<ILoggingEvent> {
+public class LogLayout extends LayoutBase<ILoggingEvent> {
 
     private static final String EMPTY_STR = "";
 
     private FileAndLineCallerConverter fileAndLineCallerConverter;
-    public MyLogLayout(){
+    public LogLayout(){
         fileAndLineCallerConverter = new FileAndLineCallerConverter();
     }
 

@@ -13,7 +13,7 @@ import java.util.Collection;
 /**
  * @author: create by ggaly
  * @version: v1.0
- * @description: com.gly.springcloudprometheus.config
+ * @description: com.gly.springcloudprometheus.convert
  * @date:2019/5/17
  **/
 @Configuration

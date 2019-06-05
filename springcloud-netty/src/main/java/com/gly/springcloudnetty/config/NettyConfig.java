@@ -23,7 +23,7 @@ import java.util.Set;
 /**
  * @author: create by ggaly
  * @version: v1.0
- * @description: com.gly.springcloudnetty.config
+ * @description: com.gly.springcloudnetty.convert
  * @date:2019/5/6
  **/
 @Configuration

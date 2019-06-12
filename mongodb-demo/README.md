@@ -1,3 +1,6 @@
+请安装可视化工具 MongoDBCompassCommunity
+
+
 MongoDB语法与现有关系型数据库SQL语法比较
 MongoDB语法            MySql语法
 

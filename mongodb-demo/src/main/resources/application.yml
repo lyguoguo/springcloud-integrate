@@ -1,0 +1,11 @@
+server:
+  port: 8031
+
+spring:
+  application:
+    name: mongodb-demo
+  data:
+    mongodb:
+      host: localhost   #同127.0.0.1
+      port: 27017
+      database: test    #指定操作的数据库
